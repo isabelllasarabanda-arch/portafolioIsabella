@@ -1,0 +1,1197 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de Isabella Prieto Sarabanda — Futuro director de cine" />
+  <meta name="author" content="Isabella Prieto Sarabanda" />
+  <title>Isabella Prieto — Portafolio</title>
+
+  <!-- Google Fonts: Pinyon Script + Inter + Caveat (escritura manuscrita para crucigrama) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Inter:wght@300;400;600;700;900&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       ESCRITORIO macOS
+       ============================================================ -->
+  <div id="desktop" role="main" aria-label="Escritorio portafolio Isabella Prieto">
+
+    <!-- Fondo: foto en blanco y negro con franjas acanaladas -->
+    <!-- Reemplaza el background-image en #desktop-bg (CSS) con tu foto real -->
+    <div id="desktop-bg" aria-hidden="true"></div>
+    <div id="desktop-overlay" aria-hidden="true"></div>
+
+    <!-- ──────────────────────────────────────────────────────────
+         BARRA DE MENÚ SUPERIOR (estilo macOS)
+         ────────────────────────────────────────────────────────── -->
+    <header id="menubar" role="banner" aria-label="Barra de menú">
+      <span class="menubar-item" style="font-weight:700;">&#xF8FF; Isabella</span>
+      <span class="menubar-item">Portafolio</span>
+      <span class="menubar-item">Películas</span>
+      <span class="menubar-item">Contacto</span>
+      <div class="menubar-right">
+        <span id="menubar-time" aria-live="polite" aria-label="Hora actual"></span>
+      </div>
+    </header>
+
+    <!-- ──────────────────────────────────────────────────────────
+         TÍTULO CENTRAL "Portfolio"
+         ────────────────────────────────────────────────────────── -->
+    <section id="title-section" aria-label="Título del portafolio">
+      <h1 class="title-logo" aria-label="Portfolio">
+        <!-- P — script cursiva -->
+        <span class="title-script" aria-hidden="true">P</span>
+        <!-- ort — sans-serif -->
+        <span class="title-sans" aria-hidden="true">ort</span>
+        <!-- f — script cursiva -->
+        <span class="title-script" aria-hidden="true">f</span>
+        <!-- o — sans-serif -->
+        <span class="title-sans" aria-hidden="true">o</span>
+        <!-- l — sans-serif -->
+        <span class="title-sans" aria-hidden="true">l</span>
+        <!-- i — con estrella decorativa encima -->
+        <span class="title-i-wrap" aria-hidden="true">
+          <span class="title-sans">i</span>
+          <span class="title-star" aria-hidden="true">&#10022;</span>
+        </span>
+        <!-- o — sans-serif -->
+        <span class="title-sans" aria-hidden="true">o</span>
+      </h1>
+
+      <!-- Subtítulos -->
+      <div class="title-subtitle" aria-hidden="true">
+        <span class="title-name">Isabella Prieto Sarabanda</span>
+        <span class="title-role">Future Film Director</span>
+      </div>
+    </section>
+
+    <!-- ──────────────────────────────────────────────────────────
+         CARPETAS DE COLOR (categorías de cine)
+         ────────────────────────────────────────────────────────── -->
+    <section aria-label="Categorías de cine">
+      <!-- Carpeta rosa — Mi primer corto -->
+      <button
+        class="folder folder-1"
+        data-folder="primer-corto"
+        aria-label="Abrir carpeta Mi primer corto"
+        title="Mi primer corto"
+      >
+        <img src="assets/icons/folder-pink.svg" alt="Carpeta rosa — Mi primer corto" />
+      </button>
+
+      <!-- Carpeta verde — Cine de los 90 -->
+      <button
+        class="folder folder-2"
+        data-folder="cine-90"
+        aria-label="Abrir carpeta Cine de los 90"
+        title="Cine de los 90"
+      >
+        <img src="assets/icons/folder-green.svg" alt="Carpeta verde — Cine de los 90" />
+      </button>
+
+      <!-- Carpeta azul — Guiones -->
+      <button
+        class="folder folder-3"
+        data-folder="guiones"
+        aria-label="Abrir carpeta Guiones"
+        title="Guiones"
+      >
+        <img src="assets/icons/folder-blue.svg" alt="Carpeta azul — Guiones" />
+      </button>
+
+      <!-- Carpeta durazno — Londres -->
+      <button
+        class="folder folder-4"
+        data-folder="londres"
+        aria-label="Abrir carpeta Londres"
+        title="Londres"
+      >
+        <img src="assets/icons/folder-peach.svg" alt="Carpeta durazno — Londres" />
+      </button>
+    </section>
+
+    <!-- ──────────────────────────────────────────────────────────
+         POLAROIDS / TARJETAS DE CINE
+         ────────────────────────────────────────────────────────── -->
+    <section aria-label="Temas de cine">
+
+      <!-- Polaroid 1 — Mi primer corto -->
+      <article
+        class="polaroid polaroid-1"
+        data-project="primer-corto"
+        tabindex="0"
+        role="button"
+        aria-label="Ver: Mi primer corto"
+      >
+        <div class="polaroid-img-placeholder" aria-hidden="true">
+          <span>🎬</span>
+          <span>mi primer corto</span>
+        </div>
+        <span class="polaroid-label">mi primer corto</span>
+      </article>
+
+      <!-- Polaroid 2 — Guiones -->
+      <article
+        class="polaroid polaroid-2"
+        data-project="guiones"
+        tabindex="0"
+        role="button"
+        aria-label="Ver: Guiones"
+      >
+        <div class="polaroid-img-placeholder" aria-hidden="true">
+          <span>📝</span>
+          <span>guiones</span>
+        </div>
+        <span class="polaroid-label">guiones</span>
+      </article>
+
+      <!-- Polaroid 3 — Cine de los 90 -->
+      <article
+        class="polaroid polaroid-3"
+        data-project="cine-90"
+        tabindex="0"
+        role="button"
+        aria-label="Ver: Cine de los 90"
+      >
+        <div class="polaroid-img-placeholder" aria-hidden="true">
+          <span>🎞️</span>
+          <span>cine de los 90</span>
+        </div>
+        <span class="polaroid-label">cine de los 90</span>
+      </article>
+
+      <!-- Polaroid 4 — Detrás de cámaras -->
+      <article
+        class="polaroid polaroid-4"
+        data-project="detras-camaras"
+        tabindex="0"
+        role="button"
+        aria-label="Ver: Detrás de cámaras"
+      >
+        <div class="polaroid-img-placeholder" aria-hidden="true">
+          <span>🎥</span>
+          <span>detrás de cámaras</span>
+        </div>
+        <span class="polaroid-label">detrás de cámaras</span>
+      </article>
+
+      <!-- Polaroid 5 — Londres -->
+      <article
+        class="polaroid polaroid-5"
+        data-project="londres"
+        tabindex="0"
+        role="button"
+        aria-label="Ver: Londres"
+      >
+        <div class="polaroid-img-placeholder" aria-hidden="true">
+          <span>🇬🇧</span>
+          <span>londres</span>
+        </div>
+        <span class="polaroid-label">londres</span>
+      </article>
+
+      <!-- Polaroid 6 — Escocia -->
+      <article
+        class="polaroid polaroid-6"
+        data-project="escocia"
+        tabindex="0"
+        role="button"
+        aria-label="Ver: Escocia"
+      >
+        <div class="polaroid-img-placeholder" aria-hidden="true">
+          <span>🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>
+          <span>escocia</span>
+        </div>
+        <span class="polaroid-label">escocia</span>
+      </article>
+
+    </section>
+
+    <!-- ──────────────────────────────────────────────────────────
+         DOCK INFERIOR
+         ────────────────────────────────────────────────────────── -->
+    <nav id="dock" role="navigation" aria-label="Dock de aplicaciones">
+
+      <!-- Notas → About -->
+      <div
+        class="dock-item"
+        data-window="about"
+        tabindex="0"
+        role="button"
+        aria-label="Abrir sección Sobre Mí"
+      >
+        <img src="assets/icons/notes.svg" alt="Notas — Sobre Mí" />
+        <div class="dock-dot" aria-hidden="true"></div>
+        <span class="dock-tooltip" aria-hidden="true">Sobre Mí</span>
+      </div>
+
+      <!-- Safari → Habilidades y Links -->
+      <div
+        class="dock-item"
+        data-window="skills"
+        tabindex="0"
+        role="button"
+        aria-label="Abrir sección Habilidades"
+      >
+        <img src="assets/icons/safari.svg" alt="Safari — Habilidades" />
+        <div class="dock-dot" aria-hidden="true"></div>
+        <span class="dock-tooltip" aria-hidden="true">Habilidades</span>
+      </div>
+
+      <!-- Cámara → Galería -->
+      <div
+        class="dock-item"
+        data-window="gallery"
+        tabindex="0"
+        role="button"
+        aria-label="Abrir sección Galería de Proyectos"
+      >
+        <img src="assets/icons/camera.svg" alt="Cámara — Galería" />
+        <div class="dock-dot" aria-hidden="true"></div>
+        <span class="dock-tooltip" aria-hidden="true">Galería</span>
+      </div>
+
+      <!-- Fotos → también galería (redundante en dock) -->
+      <div
+        class="dock-item"
+        data-window="gallery"
+        tabindex="0"
+        role="button"
+        aria-label="Abrir galería de capturas"
+      >
+        <img src="assets/icons/photos.svg" alt="Fotos — Capturas de Proyectos" />
+        <div class="dock-dot" aria-hidden="true"></div>
+        <span class="dock-tooltip" aria-hidden="true">Capturas</span>
+      </div>
+
+      <!-- Separador visual -->
+      <div class="dock-separator" aria-hidden="true"></div>
+
+      <!-- Calendario → Línea de tiempo -->
+      <div
+        class="dock-item"
+        data-window="timeline"
+        tabindex="0"
+        role="button"
+        aria-label="Abrir línea de tiempo de formación"
+      >
+        <img src="assets/icons/calendar.svg" alt="Calendario — Formación" />
+        <div class="dock-dot" aria-hidden="true"></div>
+        <span class="dock-tooltip" aria-hidden="true">Formación</span>
+      </div>
+
+      <!-- Mensajes → Recomendaciones -->
+      <div
+        class="dock-item"
+        data-window="messages"
+        tabindex="0"
+        role="button"
+        aria-label="Abrir sección Recomendaciones"
+      >
+        <img src="assets/icons/messages.svg" alt="Mensajes — Recomendaciones" />
+        <div class="dock-dot" aria-hidden="true"></div>
+        <span class="dock-tooltip" aria-hidden="true">Recomendaciones</span>
+      </div>
+
+      <!-- Favoritos → Proyectos favoritos -->
+      <div
+        class="dock-item"
+        data-window="favorites"
+        tabindex="0"
+        role="button"
+        aria-label="Abrir proyectos favoritos"
+      >
+        <img src="assets/icons/favorites.svg" alt="Favoritos — Proyectos Destacados" />
+        <div class="dock-dot" aria-hidden="true"></div>
+        <span class="dock-tooltip" aria-hidden="true">Favoritos</span>
+      </div>
+
+      <!-- Mail → Contacto -->
+      <div
+        class="dock-item"
+        data-window="contact"
+        tabindex="0"
+        role="button"
+        aria-label="Abrir formulario de contacto"
+      >
+        <img src="assets/icons/mail.svg" alt="Mail — Contacto" />
+        <div class="dock-dot" aria-hidden="true"></div>
+        <span class="dock-tooltip" aria-hidden="true">Contacto</span>
+      </div>
+
+    </nav>
+
+  </div><!-- /#desktop -->
+
+
+  <!-- ============================================================
+       VENTANAS (ocultas por defecto, JS las abre)
+       ============================================================ -->
+
+  <!-- ── VENTANA: SOBRE MÍ (About) — crucigrama decorativo pre-rellenado ── -->
+  <div
+    id="window-about"
+    class="window"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Ventana: Sobre Mí"
+    style="width:700px; top:60px; left:calc(50% - 350px);"
+  >
+    <div class="window-titlebar" data-window-id="about">
+      <div class="window-controls">
+        <button class="window-btn window-btn-close"    data-action="close"    aria-label="Cerrar ventana"></button>
+        <button class="window-btn window-btn-minimize" data-action="minimize" aria-label="Minimizar ventana"></button>
+        <button class="window-btn window-btn-maximize" data-action="maximize" aria-label="Maximizar ventana"></button>
+      </div>
+      <span class="window-title">About Me</span>
+    </div>
+    <div class="window-content about-scrapbook" style="padding:0; background:#f5f3ee;">
+
+      <!-- ── Layout: título script + crucigrama izquierda · texto derecha ── -->
+      <div class="about-scrap-layout">
+
+        <!-- COLUMNA IZQUIERDA: título + crucigrama -->
+        <div class="about-scrap-left">
+
+          <!-- Título estilo scrapbook -->
+          <div class="scrap-title-block" aria-hidden="true">
+            <span class="scrap-title-script">About</span>
+            <span class="scrap-title-dash">— Me —</span>
+          </div>
+
+          <!-- Crucigrama pre-rellenado 13×13 -->
+          <!--
+            Palabras colocadas:
+            ACROSS:
+              r0c1  : 2010
+              r2c0  : FEBRUARY
+              r4c2  : LEADERSHIP
+              r6c1  : CREATIVITY
+              r8c0  : INSPIRATION
+              r10c3 : VISION
+              r12c0 : SCREENWRITER
+            DOWN:
+              r0c2  : DIRECTOR
+              r2c5  : CAMERAMAN
+              r4c9  : TABOO
+            Las celdas vacías (no pertenecen a ninguna palabra) son negras.
+            Las 5 palabras destacadas se muestran en negrita/rojo.
+          -->
+          <div class="cw-static" role="img" aria-label="Crucigrama decorativo con palabras clave de Isabella Prieto">
+            <!-- Generado con la macro de posiciones — ver comentario arriba -->
+            <!-- Fila 0 -->
+            <div class="cws b"></div><!-- 0,0 negro -->
+            <div class="cws w kw">2</div><!-- 2010 empieza c1 -->
+            <div class="cws w" title="DIRECTOR">D</div><!-- DIRECTOR c2 -->
+            <div class="cws w kw">0</div>
+            <div class="cws w kw">1</div>
+            <div class="cws w kw">0</div><!-- 2010: c1=2 c2=0 c3=1 c4=0 — c2 compartida con DIRECTOR=D -->
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <!-- Fila 1 -->
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws w" title="DIRECTOR">I</div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <!-- Fila 2 -->
+            <div class="cws w">F</div>
+            <div class="cws w">E</div>
+            <div class="cws w" title="DIRECTOR">R</div>
+            <div class="cws w">U</div>
+            <div class="cws w">A</div>
+            <div class="cws w" title="CAMERAMAN">C</div>
+            <div class="cws w">Y</div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <!-- Fila 3 -->
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws w" title="DIRECTOR">E</div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws w" title="CAMERAMAN">A</div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <!-- Fila 4 -->
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws w hi">L</div><!-- LEADERSHIP r4c2 -->
+            <div class="cws w hi">E</div>
+            <div class="cws w hi">A</div>
+            <div class="cws w hi" title="CAMERAMAN">D</div><!-- c5: intersección LEADERSHIP+CAMERAMAN -->
+            <div class="cws w hi">E</div>
+            <div class="cws w hi">R</div>
+            <div class="cws w hi">S</div>
+            <div class="cws w hi" title="TABOO">H</div><!-- c9: intersección LEADERSHIP+TABOO -->
+            <div class="cws w hi">I</div>
+            <div class="cws w hi">P</div>
+            <div class="cws b"></div>
+            <!-- Fila 5 -->
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws w" title="DIRECTOR">C</div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws w" title="CAMERAMAN">M</div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws w" title="TABOO">A</div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <!-- Fila 6 -->
+            <div class="cws b"></div>
+            <div class="cws w hi">C</div><!-- CREATIVITY r6c1 -->
+            <div class="cws w hi" title="DIRECTOR">R</div><!-- c2: intersección CREATIVITY+DIRECTOR -->
+            <div class="cws w hi">E</div>
+            <div class="cws w hi">A</div>
+            <div class="cws w hi" title="CAMERAMAN">T</div><!-- c5: intersección CREATIVITY+CAMERAMAN -->
+            <div class="cws w hi">I</div>
+            <div class="cws w hi">V</div>
+            <div class="cws w hi">I</div>
+            <div class="cws w hi" title="TABOO">T</div><!-- c9: intersección CREATIVITY+TABOO -->
+            <div class="cws w hi">Y</div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <!-- Fila 7 -->
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws w" title="DIRECTOR">O</div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws w" title="CAMERAMAN">E</div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws w" title="TABOO">O</div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <!-- Fila 8 -->
+            <div class="cws w hi">I</div><!-- INSPIRATION r8c0 -->
+            <div class="cws w hi">N</div>
+            <div class="cws w hi">S</div>
+            <div class="cws w hi">P</div>
+            <div class="cws w hi">I</div>
+            <div class="cws w hi" title="CAMERAMAN">R</div><!-- c5: intersección -->
+            <div class="cws w hi">A</div>
+            <div class="cws w hi">T</div>
+            <div class="cws w hi">I</div>
+            <div class="cws w hi" title="TABOO">O</div><!-- c9: intersección INSPIRATION+TABOO r8c9 -->
+            <div class="cws w hi">N</div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <!-- Fila 9 -->
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws w" title="CAMERAMAN">N</div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <!-- Fila 10 -->
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws w hi">V</div><!-- VISION r10c3 -->
+            <div class="cws w hi">I</div>
+            <div class="cws w hi">S</div>
+            <div class="cws w hi">I</div>
+            <div class="cws w hi">O</div>
+            <div class="cws w hi">N</div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <!-- Fila 11 -->
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <div class="cws b"></div>
+            <!-- Fila 12 -->
+            <div class="cws w">S</div><!-- SCREENWRITER r12c0 -->
+            <div class="cws w">C</div>
+            <div class="cws w">R</div>
+            <div class="cws w">E</div>
+            <div class="cws w">E</div>
+            <div class="cws w">N</div>
+            <div class="cws w">W</div>
+            <div class="cws w">R</div>
+            <div class="cws w">I</div>
+            <div class="cws w">T</div>
+            <div class="cws w">E</div>
+            <div class="cws w">R</div>
+            <div class="cws b"></div>
+          </div><!-- /.cw-static -->
+
+          <!-- Lista manuscrita -->
+          <ol class="cw-word-list" aria-label="Palabras clave">
+            <li>Leadership</li>
+            <li>Creativity</li>
+            <li>Inspiration</li>
+            <li>Vision</li>
+            <li>Taboo</li>
+          </ol>
+
+        </div><!-- /.about-scrap-left -->
+
+        <!-- COLUMNA DERECHA: texto de Isabella -->
+        <div class="about-scrap-right">
+          <p class="about-intro-text">
+            <strong>¡Hola! Soy Isabella Prieto Sarabanda</strong> y mi sueño es ser director de cine.
+            Me gusta ser quien está detrás de cámaras: dirigir, escribir guiones y filmar.
+            No me gusta actuar, me gusta construir la historia desde atrás.
+          </p>
+          <p class="about-intro-text">
+            Tengo una visión muy concreta de las películas que quiero hacer:
+            historias que hablan de lo que casi nunca se habla.
+            Me encantan las películas con mucha emoción, el stop motion y el cine japonés.
+          </p>
+          <p class="about-intro-text">
+            Estoy terminando el bachillerato y mi meta es estudiar cine en
+            <strong>Londres</strong> y después en <strong>Escocia</strong>.
+          </p>
+          <p class="cw-hint-text">
+            Encuentra las palabras escondidas en la cuadrícula para descubrir quién soy y hacia dónde voy.
+          </p>
+        </div><!-- /.about-scrap-right -->
+
+      </div><!-- /.about-scrap-layout -->
+
+    </div><!-- /.window-content -->
+    <div class="window-footer-label">about me</div>
+  </div>
+
+  <!-- ── VENTANA: HABILIDADES (Safari) ── -->
+  <div
+    id="window-skills"
+    class="window"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Ventana: Habilidades y Tecnologías"
+    style="width:580px; top:100px; left:calc(50% - 290px + 40px);"
+  >
+    <div class="window-titlebar" data-window-id="skills">
+      <div class="window-controls">
+        <button class="window-btn window-btn-close"    data-action="close"    aria-label="Cerrar ventana"></button>
+        <button class="window-btn window-btn-minimize" data-action="minimize" aria-label="Minimizar ventana"></button>
+        <button class="window-btn window-btn-maximize" data-action="maximize" aria-label="Maximizar ventana"></button>
+      </div>
+      <span class="window-title">Habilidades y Tecnologías</span>
+    </div>
+    <div class="window-content">
+      <section class="skills-section">
+        <h3>Tecnologías</h3>
+        <div class="skills-grid" aria-label="Lista de tecnologías">
+          <span class="skill-tag">HTML5</span>
+          <span class="skill-tag">CSS3</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">Java</span>
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">Git &amp; GitHub</span>
+          <span class="skill-tag">MySQL</span>
+          <span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">Docker</span>
+          <span class="skill-tag">AWS</span>
+          <span class="skill-tag">Linux</span>
+        </div>
+
+        <h3 style="margin-top:20px;">Nivel de habilidad</h3>
+        <!-- Las barras se animan al abrir la ventana (ver JS) -->
+        <div aria-label="Barras de habilidad">
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>HTML &amp; CSS</span><span>85%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>JavaScript</span><span>70%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Python</span><span>65%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Git &amp; GitHub</span><span>75%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Bases de Datos</span><span>68%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="68"></div></div>
+          </div>
+          <div class="skill-bar-item">
+            <div class="skill-bar-label"><span>Servicios en la Nube</span><span>60%</span></div>
+            <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60"></div></div>
+          </div>
+        </div>
+
+        <div class="links-row">
+          <a
+            href="https://github.com/tu-usuario"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-btn link-btn-github"
+            aria-label="Ver perfil de GitHub (abre en nueva pestaña)"
+          >
+            <!-- GitHub icon -->
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+            </svg>
+            GitHub
+          </a>
+        </div>
+      </section>
+    </div>
+    <div class="window-footer-label">skills &amp; links</div>
+  </div>
+
+  <!-- ── VENTANA: GALERÍA (Cámara / Fotos) ── -->
+  <div
+    id="window-gallery"
+    class="window"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Ventana: Galería de Proyectos"
+    style="width:640px; top:90px; left:calc(50% - 320px - 20px);"
+  >
+    <div class="window-titlebar" data-window-id="gallery">
+      <div class="window-controls">
+        <button class="window-btn window-btn-close"    data-action="close"    aria-label="Cerrar ventana"></button>
+        <button class="window-btn window-btn-minimize" data-action="minimize" aria-label="Minimizar ventana"></button>
+        <button class="window-btn window-btn-maximize" data-action="maximize" aria-label="Maximizar ventana"></button>
+      </div>
+      <span class="window-title">Galería de Proyectos</span>
+    </div>
+    <div class="window-content">
+      <div class="gallery-grid" role="list" aria-label="Capturas e imágenes de cine">
+
+        <div class="gallery-item" role="listitem" tabindex="0"
+             data-lightbox="assets/img/corto.jpg"
+             data-caption="Mi primer cortometraje — próximamente"
+             aria-label="Mi primer corto">
+          <div class="gallery-placeholder">
+            <span style="font-size:32px;">🎬</span>
+            <span>Mi primer corto</span>
+          </div>
+          <div class="gallery-item-label">Mi primer corto</div>
+        </div>
+
+        <div class="gallery-item" role="listitem" tabindex="0"
+             data-lightbox="assets/img/guion.jpg"
+             data-caption="Páginas de guion — ideas en papel"
+             aria-label="Guiones">
+          <div class="gallery-placeholder">
+            <span style="font-size:32px;">📝</span>
+            <span>Guiones</span>
+          </div>
+          <div class="gallery-item-label">Guiones</div>
+        </div>
+
+        <div class="gallery-item" role="listitem" tabindex="0"
+             data-lightbox="assets/img/cine90.jpg"
+             data-caption="Referencias visuales del cine de los 90"
+             aria-label="Cine de los 90">
+          <div class="gallery-placeholder">
+            <span style="font-size:32px;">🎞️</span>
+            <span>Cine de los 90</span>
+          </div>
+          <div class="gallery-item-label">Cine de los 90</div>
+        </div>
+
+        <div class="gallery-item" role="listitem" tabindex="0"
+             data-lightbox="assets/img/detras.jpg"
+             data-caption="Detrás de cámaras"
+             aria-label="Detrás de cámaras">
+          <div class="gallery-placeholder">
+            <span style="font-size:32px;">🎥</span>
+            <span>Detrás de cámaras</span>
+          </div>
+          <div class="gallery-item-label">Detrás de cámaras</div>
+        </div>
+
+        <div class="gallery-item" role="listitem" tabindex="0"
+             data-lightbox="assets/img/londres.jpg"
+             data-caption="Londres — London Film School"
+             aria-label="Londres">
+          <div class="gallery-placeholder">
+            <span style="font-size:32px;">🇬🇧</span>
+            <span>Londres</span>
+          </div>
+          <div class="gallery-item-label">Londres</div>
+        </div>
+
+        <div class="gallery-item" role="listitem" tabindex="0"
+             data-lightbox="assets/img/escocia.jpg"
+             data-caption="Escocia — cine y paisajes melancólicos"
+             aria-label="Escocia">
+          <div class="gallery-placeholder">
+            <span style="font-size:32px;">🏴󠁧󠁢󠁳󠁣󠁴󠁿</span>
+            <span>Escocia</span>
+          </div>
+          <div class="gallery-item-label">Escocia</div>
+        </div>
+
+      </div>
+    </div>
+    <div class="window-footer-label">galería de cine</div>
+  </div>
+
+  <!-- ── VENTANA: FORMACIÓN (Calendario) ── -->
+  <div
+    id="window-timeline"
+    class="window"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Ventana: Formación y Metas"
+    style="width:500px; top:100px; left:calc(50% - 250px + 60px);"
+  >
+    <div class="window-titlebar" data-window-id="timeline">
+      <div class="window-controls">
+        <button class="window-btn window-btn-close"    data-action="close"    aria-label="Cerrar ventana"></button>
+        <button class="window-btn window-btn-minimize" data-action="minimize" aria-label="Minimizar ventana"></button>
+        <button class="window-btn window-btn-maximize" data-action="maximize" aria-label="Maximizar ventana"></button>
+      </div>
+      <span class="window-title">Formación y Metas</span>
+    </div>
+    <div class="window-content">
+      <nav class="timeline" aria-label="Línea de tiempo de formación y metas de cine">
+
+        <div class="timeline-item">
+          <div class="timeline-date">2020</div>
+          <div class="timeline-title">Empecé el bachillerato</div>
+          <div class="timeline-desc">Inicio de la educación secundaria, donde descubrí mi pasión por el cine y las historias visuales.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2025</div>
+          <div class="timeline-title">Técnico en Programación · SENA</div>
+          <div class="timeline-desc">Empecé el técnico en programación de aplicaciones y servicios para la nube en el SENA.</div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-date">2026</div>
+          <div class="timeline-title">Termino el bachillerato</div>
+          <div class="timeline-desc">Graduación del bachillerato. Un paso importante antes de irme a estudiar cine al exterior.</div>
+        </div>
+
+        <div class="timeline-item future">
+          <div class="timeline-date">Meta · 2027</div>
+          <div class="timeline-title">Estudiar fotografía</div>
+          <div class="timeline-desc">Quiero estudiar fotografía para fortalecer mi ojo visual y dominar la composición antes de hacer cine profesionalmente.</div>
+        </div>
+
+        <div class="timeline-item future">
+          <div class="timeline-date">Meta · 2028</div>
+          <div class="timeline-title">London Film School · Londres</div>
+          <div class="timeline-desc">Quiero irme a Londres a estudiar en la London Film School. Es una de las escuelas de cine más importantes del mundo.</div>
+        </div>
+
+        <div class="timeline-item future">
+          <div class="timeline-date">Meta · Después</div>
+          <div class="timeline-title">Estudiar cine en Escocia</div>
+          <div class="timeline-desc">Quiero irme a Escocia a estudiar cine formalmente y profundizar en la dirección y la escritura de guiones.</div>
+        </div>
+
+        <div class="timeline-item future">
+          <div class="timeline-date">Sueño</div>
+          <div class="timeline-title">Director de cine</div>
+          <div class="timeline-desc">Convertirme en un director que una el cine japonés con el cine melancólico, con esa estética y paleta de colores que me mueve por dentro.</div>
+        </div>
+
+      </nav>
+    </div>
+    <div class="window-footer-label">formación &amp; metas</div>
+  </div>
+
+  <!-- ── VENTANA: RECOMENDACIONES (Mensajes) ── -->
+  <div
+    id="window-messages"
+    class="window"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Ventana: Recomendaciones"
+    style="width:520px; top:110px; left:calc(50% - 260px - 40px);"
+  >
+    <div class="window-titlebar" data-window-id="messages">
+      <div class="window-controls">
+        <button class="window-btn window-btn-close"    data-action="close"    aria-label="Cerrar ventana"></button>
+        <button class="window-btn window-btn-minimize" data-action="minimize" aria-label="Minimizar ventana"></button>
+        <button class="window-btn window-btn-maximize" data-action="maximize" aria-label="Maximizar ventana"></button>
+      </div>
+      <span class="window-title">Recomendaciones</span>
+    </div>
+    <div class="window-content">
+      <div class="messages-list" aria-label="Lista de recomendaciones">
+
+        <div class="message-bubble">
+          <div class="message-avatar" aria-hidden="true">C</div>
+          <div class="message-body">
+            <div class="message-name">Carlos Mendoza</div>
+            <p class="message-text">
+              "Isabella es una aprendiz muy comprometida. Siempre entrega sus proyectos a tiempo,
+              pregunta con intención y aporta ideas propias al equipo. Tiene un futuro muy prometedor
+              en el desarrollo de software."
+            </p>
+            <div class="message-role">Instructor SENA · Programación Web</div>
+          </div>
+        </div>
+
+        <div class="message-bubble">
+          <div class="message-avatar" style="background: linear-gradient(135deg, #b8e0d4, #5cad8f);" aria-hidden="true">L</div>
+          <div class="message-body">
+            <div class="message-name">Laura Ríos</div>
+            <p class="message-text">
+              "Trabajar con Isabella fue genial. Es organizada, comunicativa y sabe cómo
+              dividir el trabajo en equipo. Su código es limpio y bien comentado."
+            </p>
+            <div class="message-role">Compañera de proyecto · Etapa lectiva</div>
+          </div>
+        </div>
+
+        <div class="message-bubble">
+          <div class="message-avatar" style="background: linear-gradient(135deg, #f7c59f, #e07b39);" aria-hidden="true">A</div>
+          <div class="message-body">
+            <div class="message-name">Andrés Herrera</div>
+            <p class="message-text">
+              "Tuve el placer de ver cómo Isabella desplegó su primera aplicación en AWS.
+              La forma en que investigó, configuró la instancia y resolvió los errores demuestra
+              una madurez técnica por encima de lo esperado para su nivel."
+            </p>
+            <div class="message-role">Instructor SENA · Cloud Computing</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="window-footer-label">recomendaciones</div>
+  </div>
+
+  <!-- ── VENTANA: PELÍCULAS FAVORITAS (Corazón) ── -->
+  <div
+    id="window-favorites"
+    class="window"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Ventana: Películas Favoritas"
+    style="width:700px; top:90px; left:calc(50% - 350px + 20px);"
+  >
+    <div class="window-titlebar" data-window-id="favorites">
+      <div class="window-controls">
+        <button class="window-btn window-btn-close"    data-action="close"    aria-label="Cerrar ventana"></button>
+        <button class="window-btn window-btn-minimize" data-action="minimize" aria-label="Minimizar ventana"></button>
+        <button class="window-btn window-btn-maximize" data-action="maximize" aria-label="Maximizar ventana"></button>
+      </div>
+      <span class="window-title">Películas Favoritas</span>
+    </div>
+    <div class="window-content">
+
+      <!-- Nota introductoria -->
+      <p class="films-intro">Me gustan muchísimo las películas de los años 90 y el cine lleno de emoción.</p>
+      <p class="films-note">✦ Me atrae el cine japonés.</p>
+
+      <div class="projects-grid films-grid" aria-label="Películas favoritas de Isabella">
+
+        <!-- Bones and All -->
+        <article class="project-card film-card" tabindex="0" role="button"
+                 data-film="bones-and-all"
+                 aria-label="Ver: Bones and All (2022)">
+          <div class="project-card-thumb-placeholder film-thumb" aria-hidden="true">🦴</div>
+          <div class="project-card-body">
+            <div class="project-card-title">Bones and All <span class="film-year">2022</span></div>
+            <p class="project-card-desc film-director">Dir. Luca Guadagnino</p>
+            <p class="project-card-desc">
+              Es mi película favorita. La intensidad emocional y la forma en que muestra el amor y la otredad me dejó sin palabras.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Luca Guadagnino</span>
+              <span class="project-tag">Drama</span>
+              <span class="project-tag">Romance</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Chungking Express -->
+        <article class="project-card film-card" tabindex="0" role="button"
+                 data-film="chungking-express"
+                 aria-label="Ver: Chungking Express (1994)">
+          <div class="project-card-thumb-placeholder film-thumb" aria-hidden="true">🍍</div>
+          <div class="project-card-body">
+            <div class="project-card-title">Chungking Express <span class="film-year">1994</span></div>
+            <p class="project-card-desc film-director">Dir. Wong Kar-wai</p>
+            <p class="project-card-desc">
+              La energía de los años 90 de Hong Kong, los colores saturados y esa melancolía que se siente en cada plano.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Wong Kar-wai</span>
+              <span class="project-tag">Hong Kong</span>
+              <span class="project-tag">Años 90</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- In the Mood for Love -->
+        <article class="project-card film-card" tabindex="0" role="button"
+                 data-film="in-the-mood"
+                 aria-label="Ver: In the Mood for Love (2000)">
+          <div class="project-card-thumb-placeholder film-thumb" aria-hidden="true">🌺</div>
+          <div class="project-card-body">
+            <div class="project-card-title">In the Mood for Love <span class="film-year">2000</span></div>
+            <p class="project-card-desc film-director">Dir. Wong Kar-wai</p>
+            <p class="project-card-desc">
+              La paleta de colores, los movimientos de cámara lentos y esa emoción contenida que nunca estalla pero lo dice todo.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Wong Kar-wai</span>
+              <span class="project-tag">Romance</span>
+              <span class="project-tag">Melancólico</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Lost in Translation -->
+        <article class="project-card film-card" tabindex="0" role="button"
+                 data-film="lost-in-translation"
+                 aria-label="Ver: Lost in Translation (2003)">
+          <div class="project-card-thumb-placeholder film-thumb" aria-hidden="true">🌃</div>
+          <div class="project-card-body">
+            <div class="project-card-title">Lost in Translation <span class="film-year">2003</span></div>
+            <p class="project-card-desc film-director">Dir. Sofia Coppola</p>
+            <p class="project-card-desc">
+              La soledad y la conexión al mismo tiempo. Esa sensación de estar perdido en un lugar hermoso que me encanta.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Sofia Coppola</span>
+              <span class="project-tag">Drama</span>
+              <span class="project-tag">Emoción</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- The Virgin Suicides -->
+        <article class="project-card film-card" tabindex="0" role="button"
+                 data-film="virgin-suicides"
+                 aria-label="Ver: The Virgin Suicides (1999)">
+          <div class="project-card-thumb-placeholder film-thumb" aria-hidden="true">🌸</div>
+          <div class="project-card-body">
+            <div class="project-card-title">The Virgin Suicides <span class="film-year">1999</span></div>
+            <p class="project-card-desc film-director">Dir. Sofia Coppola</span></p>
+            <p class="project-card-desc">
+              La estética pastel, la nostalgia y esa tristeza que se siente suave pero que duele. Visualmente perfecta.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Sofia Coppola</span>
+              <span class="project-tag">Años 90</span>
+              <span class="project-tag">Drama</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+    <div class="window-footer-label">películas favoritas</div>
+  </div>
+
+  <!-- ── VENTANA: CONTACTO (Mail) ── -->
+  <div
+    id="window-contact"
+    class="window"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Ventana: Formulario de Contacto"
+    style="width:520px; top:100px; left:calc(50% - 260px);"
+  >
+    <div class="window-titlebar" data-window-id="contact">
+      <div class="window-controls">
+        <button class="window-btn window-btn-close"    data-action="close"    aria-label="Cerrar ventana"></button>
+        <button class="window-btn window-btn-minimize" data-action="minimize" aria-label="Minimizar ventana"></button>
+        <button class="window-btn window-btn-maximize" data-action="maximize" aria-label="Maximizar ventana"></button>
+      </div>
+      <span class="window-title">Nuevo Mensaje</span>
+    </div>
+    <div class="window-content">
+      <form
+        id="contact-form"
+        class="contact-form"
+        novalidate
+        aria-label="Formulario de contacto para Isabella Prieto"
+      >
+        <div class="form-group">
+          <label for="contact-name">Nombre</label>
+          <input
+            type="text"
+            id="contact-name"
+            name="name"
+            placeholder="Tu nombre completo"
+            autocomplete="name"
+            aria-required="true"
+            aria-describedby="name-error"
+          />
+          <span class="form-error-msg" id="name-error" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">Correo electrónico</label>
+          <input
+            type="email"
+            id="contact-email"
+            name="email"
+            placeholder="tu@correo.com"
+            autocomplete="email"
+            aria-required="true"
+            aria-describedby="email-error"
+          />
+          <span class="form-error-msg" id="email-error" role="alert" aria-live="polite"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="contact-message">Mensaje</label>
+          <textarea
+            id="contact-message"
+            name="message"
+            placeholder="Escribe tu mensaje aquí..."
+            aria-required="true"
+            aria-describedby="message-error"
+          ></textarea>
+          <span class="form-error-msg" id="message-error" role="alert" aria-live="polite"></span>
+        </div>
+
+        <button type="submit" class="form-submit">
+          Enviar mensaje &#x2192;
+        </button>
+
+        <div class="form-success" id="form-success" role="status" aria-live="polite">
+          ✉️ ¡Mensaje enviado! Isabella se pondrá en contacto pronto.
+        </div>
+      </form>
+
+      <!-- Correo de contacto directo -->
+      <div class="contact-direct" aria-label="Correo de contacto directo">
+        <span class="contact-direct-label">También puedes escribirme directamente a:</span>
+        <a href="mailto:isabelllasarabanda@gmail.com"
+           class="contact-direct-email"
+           aria-label="Enviar correo a isabelllasarabanda@gmail.com">
+          isabelllasarabanda@gmail.com
+        </a>
+      </div>
+    </div>
+    <div class="window-footer-label">nuevo mensaje</div>
+  </div>
+
+  <!-- ── VENTANA DINÁMICA: DETALLE DE PROYECTO (se genera desde JS) ── -->
+  <div
+    id="window-project"
+    class="window"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Ventana: Detalle de Proyecto"
+    style="width:540px; top:120px; left:calc(50% - 270px + 30px);"
+  >
+    <div class="window-titlebar" data-window-id="project">
+      <div class="window-controls">
+        <button class="window-btn window-btn-close"    data-action="close"    aria-label="Cerrar ventana"></button>
+        <button class="window-btn window-btn-minimize" data-action="minimize" aria-label="Minimizar ventana"></button>
+        <button class="window-btn window-btn-maximize" data-action="maximize" aria-label="Maximizar ventana"></button>
+      </div>
+      <span class="window-title" id="project-window-title">Proyecto</span>
+    </div>
+    <div class="window-content" id="project-window-content">
+      <!-- Se inyecta dinámicamente desde JS -->
+    </div>
+    <div class="window-footer-label" id="project-window-footer">detalle del proyecto</div>
+  </div>
+
+  <!-- ── VENTANA: CARPETA (se genera desde JS) ── -->
+  <div
+    id="window-folder"
+    class="window"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Ventana: Carpeta"
+    style="width:500px; top:130px; left:calc(50% - 250px - 30px);"
+  >
+    <div class="window-titlebar" data-window-id="folder">
+      <div class="window-controls">
+        <button class="window-btn window-btn-close"    data-action="close"    aria-label="Cerrar ventana"></button>
+        <button class="window-btn window-btn-minimize" data-action="minimize" aria-label="Minimizar ventana"></button>
+        <button class="window-btn window-btn-maximize" data-action="maximize" aria-label="Maximizar ventana"></button>
+      </div>
+      <span class="window-title" id="folder-window-title">Carpeta</span>
+    </div>
+    <div class="window-content" id="folder-window-content">
+      <!-- Se inyecta dinámicamente desde JS -->
+    </div>
+    <div class="window-footer-label" id="folder-window-footer">carpeta</div>
+  </div>
+
+
+  <!-- ============================================================
+       LIGHTBOX para la galería
+       ============================================================ -->
+  <div
+    id="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Vista ampliada de imagen"
+  >
+    <button id="lightbox-close" aria-label="Cerrar vista ampliada">&times;</button>
+    <!-- Si el item tiene imagen real, se muestra; si no, se muestra el placeholder -->
+    <div id="lightbox-inner" style="text-align:center; color:white;">
+      <div id="lightbox-emoji" style="font-size:80px; margin-bottom:20px;"></div>
+      <p id="lightbox-caption" style="font-size:18px; font-weight:600;"></p>
+    </div>
+  </div>
+
+
+  <!-- ============================================================
+       SCRIPTS
+       ============================================================ -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

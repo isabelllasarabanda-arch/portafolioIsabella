@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 64" width="80" height="64">
+  <!-- folder back -->
+  <path d="M4 18 Q4 14 8 14 L32 14 L38 8 L72 8 Q76 8 76 12 L76 56 Q76 60 72 60 L8 60 Q4 60 4 56 Z" fill="#F06292"/>
+  <!-- folder front -->
+  <rect x="4" y="22" width="72" height="38" rx="4" ry="4" fill="#EC407A"/>
+  <!-- shine -->
+  <rect x="4" y="22" width="72" height="10" rx="4" ry="0" fill="white" opacity="0.15"/>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="60" height="60">
+  <defs>
+    <linearGradient id="favGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF6B8A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E0003C;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="60" height="60" rx="13" ry="13" fill="url(#favGrad)"/>
+  <!-- heart shape -->
+  <path d="M30 46 C30 46 10 34 10 22 C10 16 15 12 20 12 C24 12 27 14 30 17 C33 14 36 12 40 12 C45 12 50 16 50 22 C50 34 30 46 30 46 Z" fill="white"/>
+  <!-- highlight -->
+  <path d="M20 16 C18 17 16 20 16 23" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.4"/>
+</svg>
