@@ -655,6 +655,91 @@ function initFavoriteCards() {
 
 
 /* ------------------------------------------------------------
+   10b. POLAROIDS DE PELÍCULAS FAVORITAS
+   - Clic / toque / Enter: selecciona y muestra la información.
+   - Arrastrar (mouse o dedo): mueve la polaroid y la trae al frente.
+   Los datos de cada película viven en los atributos data-* del HTML.
+   ------------------------------------------------------------ */
+function initFilmPolaroids() {
+  const stage  = document.getElementById('fv-stage');
+  const detail = document.getElementById('fv-detail');
+  if (!stage || !detail) return;
+
+  const escapeHTML = str => String(str).replace(/[&<>"']/g, c => (
+    { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
+  ));
+
+  let zTop = 20;
+
+  function showDetail(pol) {
+    stage.querySelectorAll('.fv-pol.is-selected').forEach(n => n.classList.remove('is-selected'));
+    pol.classList.add('is-selected');
+
+    const d = pol.dataset;
+    const tags = (d.tags || '').split('|').filter(Boolean);
+    detail.innerHTML = `
+      <h3 class="fv-detail-title">${escapeHTML(d.title)} <span>${escapeHTML(d.year)}</span></h3>
+      <p class="fv-detail-dir">Dir. ${escapeHTML(d.director)}</p>
+      <p class="fv-detail-desc">${escapeHTML(d.desc)}</p>
+      <ul class="fv-tags">${tags.map(t => `<li>${escapeHTML(t)}</li>`).join('')}</ul>
+    `;
+
+    // En pantallas angostas el panel queda arriba: lo traemos a la vista
+    if (window.matchMedia('(max-width: 768px)').matches) {
+      detail.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
+  }
+
+  stage.querySelectorAll('.fv-pol').forEach(pol => {
+    let dx = 0, dy = 0, startX = 0, startY = 0, moved = false, active = false;
+
+    pol.addEventListener('pointerdown', e => {
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      active = true;
+      moved  = false;
+      startX = e.clientX - dx;
+      startY = e.clientY - dy;
+      pol.style.setProperty('--z', ++zTop);
+      try { pol.setPointerCapture(e.pointerId); } catch (_) { /* sin captura */ }
+    });
+
+    pol.addEventListener('pointermove', e => {
+      if (!active) return;
+      const nx = e.clientX - startX;
+      const ny = e.clientY - startY;
+      if (!moved && Math.abs(nx - dx) + Math.abs(ny - dy) < 5) return;
+      moved = true;
+      pol.classList.add('is-dragging');
+      dx = nx;
+      dy = ny;
+      pol.style.setProperty('--dx', dx + 'px');
+      pol.style.setProperty('--dy', dy + 'px');
+    });
+
+    const endDrag = () => {
+      active = false;
+      pol.classList.remove('is-dragging');
+    };
+
+    pol.addEventListener('pointerup', () => {
+      const wasDrag = moved;
+      endDrag();
+      if (!wasDrag) showDetail(pol);
+    });
+    pol.addEventListener('pointercancel', endDrag);
+
+    pol.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        pol.style.setProperty('--z', ++zTop);
+        showDetail(pol);
+      }
+    });
+  });
+}
+
+
+/* ------------------------------------------------------------
    11. GALERÍA Y LIGHTBOX
    ------------------------------------------------------------ */
 function initGallery() {
@@ -863,6 +948,7 @@ function init() {
   initFolders();
   initPolaroids();
   initFavoriteCards();
+  initFilmPolaroids();
   initGallery();
   initLightbox();
   initContactForm();

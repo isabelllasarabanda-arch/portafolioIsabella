@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&family=Inter:wght@300;400;600;700;900&family=Caveat:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Fuentes de la ventana Películas Favoritas: serif, marcador y lapicero -->
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Permanent+Marker&family=Reenie+Beanie&display=swap" rel="stylesheet" />
 
   <!-- Estilos -->
   <link rel="stylesheet" href="css/styles.css" />
@@ -912,14 +914,16 @@
     <div class="window-footer-label">recomendaciones</div>
   </div>
 
-  <!-- ── VENTANA: PELÍCULAS FAVORITAS (Corazón) ── -->
+  <!-- ── VENTANA: PELÍCULAS FAVORITAS (Corazón) ──
+       Polaroids antiguas: se pueden arrastrar y, al tocar una, se muestra su información.
+       Para agregar una película, copia un bloque .fv-pol, cambia los data-* y la foto en assets/films/. -->
   <div
     id="window-favorites"
     class="window"
     role="dialog"
     aria-modal="true"
     aria-label="Ventana: Películas Favoritas"
-    style="width:700px; top:90px; left:calc(50% - 350px + 20px);"
+    style="width:780px; top:70px; left:calc(50% - 390px + 20px);"
   >
     <div class="window-titlebar" data-window-id="favorites">
       <div class="window-controls">
@@ -930,107 +934,108 @@
       <span class="window-title">Películas Favoritas</span>
     </div>
     <div class="window-content">
+      <div class="fv-layout">
 
-      <!-- Nota introductoria -->
-      <p class="films-intro">Me gustan muchísimo las películas de los años 90 y el cine lleno de emoción.</p>
-      <p class="films-note">✦ Me atrae el cine japonés.</p>
-
-      <div class="projects-grid films-grid" aria-label="Películas favoritas de Isabella">
-
-        <!-- Bones and All -->
-        <article class="project-card film-card" tabindex="0" role="button"
-                 data-film="bones-and-all"
-                 aria-label="Ver: Bones and All (2022)">
-          <div class="project-card-thumb-placeholder film-thumb" aria-hidden="true">🦴</div>
-          <div class="project-card-body">
-            <div class="project-card-title">Bones and All <span class="film-year">2022</span></div>
-            <p class="project-card-desc film-director">Dir. Luca Guadagnino</p>
-            <p class="project-card-desc">
-              Es mi película favorita. La intensidad emocional y la forma en que muestra el amor y la otredad me dejó sin palabras.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Luca Guadagnino</span>
-              <span class="project-tag">Drama</span>
-              <span class="project-tag">Romance</span>
-            </div>
+        <aside class="fv-side">
+          <h2 class="fv-heading">Películas favoritas</h2>
+          <p class="fv-intro">Me gustan muchísimo las películas de los años 90 y el cine lleno de emoción.</p>
+          <p class="fv-note">✦ Me atrae el cine japonés.</p>
+          <div class="fv-detail" id="fv-detail" aria-live="polite">
+            <p class="fv-hint">Toca una polaroid para leer por qué está aquí. Arrástralas para ordenarlas a tu gusto.</p>
           </div>
-        </article>
+        </aside>
 
-        <!-- Chungking Express -->
-        <article class="project-card film-card" tabindex="0" role="button"
-                 data-film="chungking-express"
-                 aria-label="Ver: Chungking Express (1994)">
-          <div class="project-card-thumb-placeholder film-thumb" aria-hidden="true">🍍</div>
-          <div class="project-card-body">
-            <div class="project-card-title">Chungking Express <span class="film-year">1994</span></div>
-            <p class="project-card-desc film-director">Dir. Wong Kar-wai</p>
-            <p class="project-card-desc">
-              La energía de los años 90 de Hong Kong, los colores saturados y esa melancolía que se siente en cada plano.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Wong Kar-wai</span>
-              <span class="project-tag">Hong Kong</span>
-              <span class="project-tag">Años 90</span>
-            </div>
-          </div>
-        </article>
+        <div class="fv-stage" id="fv-stage" aria-label="Películas favoritas de Isabella">
 
-        <!-- In the Mood for Love -->
-        <article class="project-card film-card" tabindex="0" role="button"
-                 data-film="in-the-mood"
-                 aria-label="Ver: In the Mood for Love (2000)">
-          <div class="project-card-thumb-placeholder film-thumb" aria-hidden="true">🌺</div>
-          <div class="project-card-body">
-            <div class="project-card-title">In the Mood for Love <span class="film-year">2000</span></div>
-            <p class="project-card-desc film-director">Dir. Wong Kar-wai</p>
-            <p class="project-card-desc">
-              La paleta de colores, los movimientos de cámara lentos y esa emoción contenida que nunca estalla pero lo dice todo.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Wong Kar-wai</span>
-              <span class="project-tag">Romance</span>
-              <span class="project-tag">Melancólico</span>
-            </div>
+        <!-- Bones and All (2022) -->
+        <div class="fv-pol" tabindex="0" role="button"
+             data-film="bones-and-all"
+             data-title="Bones and All" data-year="2022" data-director="Luca Guadagnino"
+             data-desc="Es mi película favorita. La intensidad emocional y la forma en que muestra el amor y la otredad me dejó sin palabras." data-tags="Luca Guadagnino|Drama|Romance"
+             aria-label="Bones and All, 2022. Dirigida por Luca Guadagnino"
+             style="--r:-4deg; --x:2px; --y:0px; --z:1; --tr:-5deg; --sc:22%; --sd:81%; --sa:88deg; --sb:70deg;">
+          <div class="fv-frame">
+              <i class="fv-tape" aria-hidden="true"></i>
+            <div class="fv-photo"><img src="assets/films/bones.jpg" alt="Fotograma de Bones and All" loading="lazy" draggable="false" /></div>
+            <span class="fv-hand fv-hand-m" style="font-size:8.60cqw;">Bones and All</span>
+            <span class="fv-year" aria-hidden="true">2022</span>
           </div>
-        </article>
+          <p class="fv-cap">Bones and All, 2022<span>Luca Guadagnino</span></p>
+        </div>
+        <!-- Chungking Express (1994) -->
+        <div class="fv-pol" tabindex="0" role="button"
+             data-film="chungking-express"
+             data-title="Chungking Express" data-year="1994" data-director="Wong Kar-wai"
+             data-desc="La energía de los años 90 de Hong Kong, los colores saturados y esa melancolía que se siente en cada plano." data-tags="Wong Kar-wai|Hong Kong|Años 90"
+             aria-label="Chungking Express, 1994. Dirigida por Wong Kar-wai"
+             style="--r:3deg; --x:-3px; --y:26px; --z:2; --tr:3deg; --sc:64%; --sd:35%; --sa:95deg; --sb:79deg;">
+          <div class="fv-frame">
+            <div class="fv-photo"><img src="assets/films/chungking.jpg" alt="Fotograma de Chungking Express" loading="lazy" draggable="false" /></div>
+            <span class="fv-hand fv-hand-b" style="font-size:10.00cqw;">Chungking Express</span>
+            <span class="fv-year" aria-hidden="true">1994</span>
+          </div>
+          <p class="fv-cap">Chungking Express, 1994<span>Wong Kar-wai</span></p>
+        </div>
+        <!-- In the Mood for Love (2000) -->
+        <div class="fv-pol" tabindex="0" role="button"
+             data-film="in-the-mood"
+             data-title="In the Mood for Love" data-year="2000" data-director="Wong Kar-wai"
+             data-desc="La paleta de colores, los movimientos de cámara lentos y esa emoción contenida que nunca estalla pero lo dice todo." data-tags="Wong Kar-wai|Romance|Melancólico"
+             aria-label="In the Mood for Love, 2000. Dirigida por Wong Kar-wai"
+             style="--r:-2deg; --x:-2px; --y:-4px; --z:3; --tr:-3deg; --sc:47%; --sd:18%; --sa:102deg; --sb:88deg;">
+          <div class="fv-frame">
+            <div class="fv-photo"><img src="assets/films/mood1.jpg" alt="Fotograma de In the Mood for Love: mujer con una rosa amarilla" loading="lazy" draggable="false" /></div>
+            <span class="fv-hand fv-hand-m" style="font-size:6.00cqw;">In the Mood for Love</span>
+            <span class="fv-year" aria-hidden="true">2000</span>
+          </div>
+          <p class="fv-cap">In the Mood for Love, 2000<span>Wong Kar-wai</span></p>
+        </div>
+        <!-- In the Mood for Love (2000) -->
+        <div class="fv-pol" tabindex="0" role="button"
+             data-film="in-the-mood-2"
+             data-title="In the Mood for Love" data-year="2000" data-director="Wong Kar-wai"
+             data-desc="La paleta de colores, los movimientos de cámara lentos y esa emoción contenida que nunca estalla pero lo dice todo." data-tags="Wong Kar-wai|Romance|Melancólico"
+             aria-label="In the Mood for Love, 2000. Dirigida por Wong Kar-wai"
+             style="--r:5deg; --x:5px; --y:8px; --z:4; --tr:4deg; --sc:71%; --sd:52%; --sa:109deg; --sb:97deg;">
+          <div class="fv-frame">
+              <i class="fv-tape" aria-hidden="true"></i>
+            <div class="fv-photo"><img src="assets/films/mood2.jpg" alt="Fotograma de In the Mood for Love: hombre de espaldas junto a una ventana" loading="lazy" draggable="false" /></div>
+            <span class="fv-hand fv-hand-b" style="font-size:9.44cqw;">Wong Kar-wai, 2000</span>
+            <span class="fv-year" aria-hidden="true">2000</span>
+          </div>
+          <p class="fv-cap">In the Mood for Love, 2000<span>Wong Kar-wai</span></p>
+        </div>
+        <!-- Lost in Translation (2003) -->
+        <div class="fv-pol" tabindex="0" role="button"
+             data-film="lost-in-translation"
+             data-title="Lost in Translation" data-year="2003" data-director="Sofia Coppola"
+             data-desc="La soledad y la conexión al mismo tiempo. Esa sensación de estar perdido en un lugar hermoso que me encanta." data-tags="Sofia Coppola|Drama|Emoción"
+             aria-label="Lost in Translation, 2003. Dirigida por Sofia Coppola"
+             style="--r:-5deg; --x:-1px; --y:-2px; --z:5; --tr:-2deg; --sc:38%; --sd:88%; --sa:116deg; --sb:106deg;">
+          <div class="fv-frame">
+              <i class="fv-tape" aria-hidden="true"></i>
+            <div class="fv-photo"><img src="assets/films/lost.jpg" alt="Fotograma de Lost in Translation" loading="lazy" draggable="false" /></div>
+            <span class="fv-hand fv-hand-m" style="font-size:6.32cqw;">Lost in Translation</span>
+            <span class="fv-year" aria-hidden="true">2003</span>
+          </div>
+          <p class="fv-cap">Lost in Translation, 2003<span>Sofia Coppola</span></p>
+        </div>
+        <!-- The Virgin Suicides (1999) -->
+        <div class="fv-pol" tabindex="0" role="button"
+             data-film="virgin-suicides"
+             data-title="The Virgin Suicides" data-year="1999" data-director="Sofia Coppola"
+             data-desc="La estética pastel, la nostalgia y esa tristeza suave pero que duele. Visualmente perfecta." data-tags="Sofia Coppola|Años 90|Drama"
+             aria-label="The Virgin Suicides, 1999. Dirigida por Sofia Coppola"
+             style="--r:2deg; --x:4px; --y:10px; --z:6; --tr:2deg; --sc:15%; --sd:60%; --sa:123deg; --sb:115deg;">
+          <div class="fv-frame">
+            <div class="fv-photo"><img src="assets/films/virgin.jpg" alt="Fotograma de The Virgin Suicides" loading="lazy" draggable="false" /></div>
+            <span class="fv-hand fv-hand-b" style="font-size:8.95cqw;">The Virgin Suicides</span>
+            <span class="fv-year" aria-hidden="true">1999</span>
+          </div>
+          <p class="fv-cap">The Virgin Suicides, 1999<span>Sofia Coppola</span></p>
+        </div>
 
-        <!-- Lost in Translation -->
-        <article class="project-card film-card" tabindex="0" role="button"
-                 data-film="lost-in-translation"
-                 aria-label="Ver: Lost in Translation (2003)">
-          <div class="project-card-thumb-placeholder film-thumb" aria-hidden="true">🌃</div>
-          <div class="project-card-body">
-            <div class="project-card-title">Lost in Translation <span class="film-year">2003</span></div>
-            <p class="project-card-desc film-director">Dir. Sofia Coppola</p>
-            <p class="project-card-desc">
-              La soledad y la conexión al mismo tiempo. Esa sensación de estar perdido en un lugar hermoso que me encanta.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Sofia Coppola</span>
-              <span class="project-tag">Drama</span>
-              <span class="project-tag">Emoción</span>
-            </div>
-          </div>
-        </article>
-
-        <!-- The Virgin Suicides -->
-        <article class="project-card film-card" tabindex="0" role="button"
-                 data-film="virgin-suicides"
-                 aria-label="Ver: The Virgin Suicides (1999)">
-          <div class="project-card-thumb-placeholder film-thumb" aria-hidden="true">🌸</div>
-          <div class="project-card-body">
-            <div class="project-card-title">The Virgin Suicides <span class="film-year">1999</span></div>
-            <p class="project-card-desc film-director">Dir. Sofia Coppola</span></p>
-            <p class="project-card-desc">
-              La estética pastel, la nostalgia y esa tristeza que se siente suave pero que duele. Visualmente perfecta.
-            </p>
-            <div class="project-tags">
-              <span class="project-tag">Sofia Coppola</span>
-              <span class="project-tag">Años 90</span>
-              <span class="project-tag">Drama</span>
-            </div>
-          </div>
-        </article>
+        </div>
 
       </div>
     </div>
