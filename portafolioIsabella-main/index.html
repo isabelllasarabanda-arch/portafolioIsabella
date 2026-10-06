@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
@@ -16,8 +16,32 @@
 
   <!-- Estilos -->
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/intro.css" />
 </head>
-<body>
+<body class="intro-active">
+  <!-- ============================================================
+       INTRO: ARRANQUE Y BLOQUEO (estilo MacBook)
+       ============================================================ -->
+  <section id="boot" class="intro-screen" aria-label="Iniciando">
+    <svg viewBox="0 0 170 200" aria-hidden="true"><path d="M85 52c-9-14-27-15-40-6C27 59 22 86 33 115c9 24 22 45 38 45 8 0 11-5 22-5s14 5 22 5c16 0 30-23 38-43-20-9-24-40-3-53-10-13-25-17-35-13-9 4-18 6-30 1zM95 36c15-1 28-13 29-30-16 1-30 14-29 30z"/></svg>
+    <div class="boot-bar"><i></i></div>
+  </section>
+
+  <section id="lock" class="intro-screen is-hidden" tabindex="0" aria-label="Pantalla de bloqueo">
+    <div class="lock-date" id="lock-date"></div>
+    <div class="lock-time" id="lock-time"></div>
+    <div class="lock-hint">Haz clic para iniciar sesión</div>
+    <div class="lock-login">
+      <div class="lock-avatar" id="lock-avatar"></div>
+      <b id="lock-name"></b>
+      <div class="lock-pw">
+        <input id="lock-pass" type="password" placeholder="Introduce la contraseña" autocomplete="off" aria-label="Contraseña" />
+        <button id="lock-go" type="button" aria-label="Entrar">&rarr;</button>
+      </div>
+      <div class="lock-msg" id="lock-msg">Pista: 1234</div>
+    </div>
+  </section>
+
 
   <!-- ============================================================
        ESCRITORIO macOS
@@ -1197,6 +1221,7 @@
        SCRIPTS
        ============================================================ -->
   <script src="js/main.js"></script>
+  <script src="js/intro.js"></script>
 
 </body>
 </html>
