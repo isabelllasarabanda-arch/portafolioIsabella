@@ -1564,16 +1564,8 @@ html, body {
    Todo usa el prefijo fv- para no chocar con las polaroids del escritorio.
    ------------------------------------------------------------ */
 #window-favorites {
-  background: #5a3a2a;
   max-height: calc(100vh - 100px);
 }
-
-#window-favorites .window-titlebar {
-  background: #6a4634;
-  border-bottom: 1px solid #3b2418;
-}
-
-#window-favorites .window-title { color: #f6eee2; }
 
 /* Fondo de encaje: foto del encaje con un velo cálido para que se lean los textos */
 #window-favorites .window-content {
@@ -1582,12 +1574,6 @@ html, body {
   background:
     linear-gradient(rgba(238, 224, 206, 0.34), rgba(238, 224, 206, 0.34)),
     url('../assets/encaje.jpg') center / cover no-repeat;
-}
-
-#window-favorites .window-footer-label {
-  background: #6a4634;
-  border-top: 1px solid #3b2418;
-  color: #ead9c4;
 }
 
 #window-favorites .window-content::-webkit-scrollbar-thumb { background: rgba(90, 58, 42, 0.5); }

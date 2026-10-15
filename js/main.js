@@ -66,32 +66,18 @@ const PROJECTS = {
     link: '#',
     linkLabel: 'Ver más'
   },
-  'londres': {
-    title: 'Londres',
-    emoji: '🇬🇧',
+  'canada': {
+    title: 'Canadá',
+    emoji: '🇨🇦',
     color: '#9C27B0',
-    subtitle: 'London Film School · Meta 2028',
+    subtitle: 'Junio 2028 · York University (Toronto) · Becas',
     description: `
-      <p>Mi gran meta es estudiar en la London Film School en 2028. Es una de las escuelas
-      de cine más importantes del mundo y el lugar donde quiero formarme como director.</p>
-      <p>Londres representa el primer gran paso hacia la carrera que soñé desde siempre.</p>
+      <p>Mi gran meta es irme a Canadá en junio de 2028 a estudiar cine, ya sea en Vancouver,
+      Toronto o Montreal. Quiero lograrlo por medio de varias becas.</p>
+      <p>Mi universidad soñada es la <strong>York University</strong>, en Toronto.</p>
+      <p>Canadá representa el primer gran paso hacia la carrera que soñé desde siempre.</p>
     `,
-    tags: ['London Film School', 'Meta 2028', 'Dirección de cine'],
-    link: 'https://lfs.org.uk',
-    linkLabel: 'Ver London Film School'
-  },
-  'escocia': {
-    title: 'Escocia',
-    emoji: '🏴󠁧󠁢󠁳󠁣󠁴󠁿',
-    color: '#1E88E5',
-    subtitle: 'Estudios de cine · Después de Londres',
-    description: `
-      <p>Después de Londres, quiero irme a Escocia a estudiar cine formalmente y profundizar
-      en la dirección y la escritura de guiones en un entorno más íntimo y creativo.</p>
-      <p>La estética melancólica del paisaje escocés conecta perfectamente con el tipo
-      de cine que quiero hacer.</p>
-    `,
-    tags: ['Escocia', 'Cine', 'Dirección', 'Guion'],
+    tags: ['Canadá', 'Junio 2028', 'York University', 'Vancouver', 'Toronto', 'Montreal', 'Becas'],
     link: '#',
     linkLabel: 'Próximamente'
   }
@@ -120,12 +106,12 @@ const FOLDERS = {
     description: 'Historias escritas desde cero: personajes, atmósfera, silencios.',
     projects: ['guiones']
   },
-  'londres': {
-    title: 'Londres',
+  'canada': {
+    title: 'Canadá',
     color: '#FF8C42',
-    emoji: '🇬🇧',
-    description: 'Mi meta de estudiar en la London Film School en 2028.',
-    projects: ['londres', 'escocia']
+    emoji: '🇨🇦',
+    description: 'Mi meta de estudiar cine en Canadá en junio de 2028, con becas. Universidad soñada: York University, Toronto.',
+    projects: ['canada']
   }
 };
 
